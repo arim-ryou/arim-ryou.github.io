@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Scroll Navigation + BeerSlider</title>
+  <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Trocchi&display=swap" rel="stylesheet">
 </head>
-<body>
-  <p>Hello, World!</p>
+<body class="fade-in">
+  <header class="navbar">
+    <div class="logo">MySite</div>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#Technology" class="nav-link active">Technology</a></li>
+        <li><a href="#Result" class="nav-link">Result</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="Technology" data-bg="#231f20">
+      <h1>Technology</h1>
+        <h2>Quantum Supremacy in CT Reconstruction</h2>
+          <h3>Quantum Compressed Sensing Tomographic Reconstruction (QCSTR)</h3>
+          <p>Quantum Compressed Sensing Tomographic Reconstruction (QCSTR) 는 고전 컴퓨터의 계산 한계를 극복하기 위해 양자 컴퓨팅을 활용한 CT 영상 재건 알고리즘입니다.
+            D-Wave의 QUBO(Quadratic Unconstrained Binary Optimization) 모델을 기반으로 하며, 기존 CT 재건 방식인 SART 및 FBP보다 더 높은 정확도를 제공합니다.
+            특히, sinogram 데이터의 약 50%가 손실된 상태에서도 낮은 오류율을 유지하여 기존 알고리즘과 뚜렷한 성능 차이를 보입니다.</p>
+    </section>
+
+    <section id="Result" data-bg="#e26961">
+      <h1>Result</h1>
+      <h2>Limited Projection Angle</h2>
+      <div class="container">
+        <div class="side-image">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/limit_angle_sinogram.png" alt="Sinogram">
+        </div>
+        <div class="beer-slider" data-beer-label="FBP">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/limit_angle_QTR.png">
+          <div class="beer-reveal" data-beer-label="QTR">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/limit_angle_fbp.png">
+          </div>
+        </div>
+      </div>
+      <h2>Artifact in High-Resolution CCD</h2>
+      <div class="container">
+        <div class="side-image">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_Sinogram.png" alt="Sinogram"> 
+        </div>
+        <div class="beer-slider" data-beer-label="FBP">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_QTR.png">
+          <div class="beer-reveal" data-beer-label="QTR">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_fbp.png">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="side-image">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_Sinogram_2.png" alt="Sinogram"> 
+        </div>
+        <div class="beer-slider" data-beer-label="FBP">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_QTR_2.png">
+          <div class="beer-reveal" data-beer-label="QTR">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_fbp_2.png">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <script src="beerslider.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
