@@ -1,10 +1,10 @@
 :root {
-  --dark-bg: #101820;          /* 진한 네이비 블랙 */
-  --peach: #00b2ca;            /* 과학적이고 현대적인 시안 블루 */
-  --text-light: #f0f4f8;       /* 부드러운 밝은 블루그레이 */
+  --dark-bg: #222831;          /* 진한 네이비 블랙 */
+  --peach: #00ADB5;            /* 과학적이고 현대적인 시안 블루 */
+  --text-light: #EEEEEE;       /* 부드러운 밝은 블루그레이 */
   --highlight: #ffd500;        /* 과학 강의 강조용 선명한 노랑 */
   --content-width: 1100px;
-  --section-bg: #1f2a36;       /* 약간 밝은 배경으로 섹션 구분 */
+  --section-bg: #393E46;       /* 약간 밝은 배경으로 섹션 구분 */
 }
 
 html {
