@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--dark-bg);
@@ -71,7 +71,7 @@ body.loaded {
   color: var(--text-light);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.9rem;
 }
 
@@ -108,40 +108,38 @@ body.loaded {
 }
 
 section {
-  padding: 80px 20px;
+  padding: 0px 20px;
   min-height: 100vh;
   max-width: var(--content-width);
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: var(--section-bg);
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 h1 {
-  font-size: 2.2rem;
-  margin-top: 1.2em;
-  line-height: 1.3;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.75rem;
-  margin-top: 1.1em;
-  line-height: 1.4;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.3rem;
-  margin-top: 1em;
-  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
+
 p {
   font-size: 1rem;
-  margin: 0.8em 0;
+  margin: 0;
   line-height: 1.6;
 }
 
 .container {
-  margin: 40px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center;     /* 세로 중앙 정렬 */
@@ -165,10 +163,9 @@ p {
 }
 
 .side-image figcaption {
-  margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000;
-  font-weight: bold;
+  font-weight: 800;
 }
 .side-image img,
 .beer-slider img {
@@ -186,8 +183,8 @@ p {
 .beer-reveal[data-beer-label]:after {
   background: rgba(0, 0, 0, 0.8);
   color: #ffffff;
-  font-weight: bold;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
   padding: 4px 4px;
   border-radius: 4px;
   position: absolute;
