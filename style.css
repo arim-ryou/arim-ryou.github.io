@@ -49,6 +49,11 @@ body.loaded {
   background-color: rgba(16, 24, 32, 0.3);
   backdrop-filter: blur(5px);
 }
+.logo {
+  display: flex;      /* 옆으로 정렬 */
+  align-items: center; /* 수직 중앙 정렬 (선택사항) */
+  gap: 10px;           /* 이미지 사이 간격 (선택사항) */
+}
 
 .logo img {
   height: 40px;       
