@@ -1,9 +1,9 @@
 :root {
-  --dark-bg: #222831;          /* 진한 네이비 블랙 */
-  --text-light: #EEEEEE;       /* 부드러운 밝은 블루그레이 */
-  --highlight: #00ADB5;        /* 과학 강의 강조용 선명한 노랑 */
+  --dark-bg: #222831;         
+  --text-light: #EEEEEE;      
+  --highlight: #00ADB5;        
   --content-width: 1100px;
-  --section-bg: #393E46;       /* 약간 밝은 배경으로 섹션 구분 */
+  --section-bg: #393E46;      
 }
 
 html {
@@ -51,9 +51,9 @@ body.loaded {
 }
 
 .logo img {
-  height: 40px;       /* 높이 기준으로 크기 조절 */
-  width: auto;        /* 비율 유지 */
-  display: block;     /* 여백 제거 */
+  height: 40px;       
+  width: auto;       
+  display: block;    
 }
 
 .nav-menu {
@@ -108,10 +108,10 @@ body.loaded {
 }
 
 section {
-  padding: 0px 20px;
+  padding: 30px 50px;
   min-height: 100vh;
   max-width: var(--content-width);
-  margin: 10px auto;
+  margin: 0px auto;
   background-color: var(--section-bg);
   box-sizing: border-box;
   border-radius: 0px;
@@ -119,16 +119,19 @@ section {
 
 h1 {
   font-size: 2.4rem;
+  margin: 20px 0;
   font-weight: 700;
 }
 
 h2 {
   font-size: 1.8rem;
+  margin: 10px 0;
   font-weight: 600;
 }
 
 h3 {
   font-size: 1.4rem;
+  margin: 5px;
   font-weight: 500;
 }
 
