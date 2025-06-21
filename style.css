@@ -186,18 +186,16 @@ p {
   max-width: none;
 }
 
-/* override BeerSlider label appearance */
+
 .beer-slider[data-beer-label]:after,
 .beer-reveal[data-beer-label]:after {
-  background: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 4px 4px;
-  border-radius: 4px;
+  content: attr(data-beer-label);
   position: absolute;
-  top: 9px;        /* 📌 label 위치 위로 올리기 */
-  z-index: 10;
+  top: 1rem;
+  line-height: 1;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 768px) {
