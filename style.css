@@ -113,7 +113,7 @@ body.loaded {
 }
 
 section {
-  padding: 30px 50px;
+  padding: 30px 30px;
   min-height: 100vh;
   max-width: var(--content-width);
   margin: 0px auto;
@@ -148,20 +148,19 @@ p {
 
 .container {
   margin: 10px auto;
-  display: flex;
-  justify-content: center; /* 가로 중앙 정렬 */
-  align-items: center;     /* 세로 중앙 정렬 */
-  height: 100%;            /* 필요시 높이 설정 */
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
   padding: 30px;
   box-sizing: border-box;
-  justify-content: space-between;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  background-color: rgb(255,255,255); /* Darker section color */
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: repeat(4, 1fr); /* 기본은 4개 */
 }
 
+.container.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .side-image,
 .beer-slider {
@@ -197,9 +196,12 @@ p {
   border-radius: 0.125rem;
   background: rgba(0, 0, 0, 0.75);
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .side-image, .beer-slider {
     flex: 1 1 48%;
   }
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+

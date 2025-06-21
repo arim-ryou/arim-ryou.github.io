@@ -41,19 +41,28 @@
         </p>
         <div  class=container>
           <div class="side-image">
-            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/medical_ct_image.png" alt="medical_ct_image">
-            <figcaption>의료용 CT 이미지</figcaption>
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Sample.png" alt="Sample">
+            <figcaption>Sample</figcaption>
           </div>
           <div class="side-image">
-            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/expected_medical_image.jpg" alt="expected_medical_image">
-            <figcaption>양자 CT 이미지 예측 결과</figcaption>
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Noise_FBP.png" alt="Noise FBP">
+            <figcaption>Noise FBP</figcaption>
+          </div>
+          <div class="side-image">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Noise_SART.png" alt="Noise SART">
+            <figcaption>Noise SART</figcaption>
+          </div>
+          <div class="side-image">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Noise_QCSTR.png" alt="Noise QCSTR">
+            <figcaption>Noise QCSTR</figcaption>
           </div>
         </div>
     </section>
 
-    <section id="Result" data-bg="#e26961">
-      <h1>Result</h1>
-      <h2>Limited Projection Angle</h2>
+    <section id="Quantum Suppremacy" data-bg="#e26961">
+      <h2>Quantum Supremacy </h2>
+      <p>기존 재건 알고리즘인 SART와 FBP는 sinogram 데이터 손실이나 제한된 투영 각도에서 성능이 저하되어 흐릿하고 정확도가 낮은 영상을 생성하지만 양자 알고리즘은 높은 정확도를 가지는 양자 CT 이미지를 재건합니다.</p>
+      <h3>Limit Angle Artifact</h3>
       <div class="container">
         <div class="side-image">
           <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/limit_angle_sinogram.png" alt="Sinogram">
@@ -65,7 +74,7 @@
           </div>
         </div>
       </div>
-      <h2>Artifact in High-Resolution CCD</h2>
+      <h3>Artifact resistance in Quantum CT image</h3>
       <div class="container">
         <div class="side-image">
           <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Artifact_Sinogram.png" alt="Sinogram"> 
@@ -94,5 +103,19 @@
 
   <script src="beerslider.js"></script>
   <script src="script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const containers = document.querySelectorAll('.container');
+
+      containers.forEach(container => {
+        const items = container.querySelectorAll('.side-image, .beer-slider');
+        if (items.length === 2) {
+          container.classList.add('two-columns');
+        }
+      });
+    });
+  </script>
+
+
 </body>
 </html>
