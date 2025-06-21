@@ -16,6 +16,7 @@
       <ul class="nav-menu" id="navMenu">
         <li><a href="#Motivation" class="nav-link active">Motivation</a></li>
         <li><a href="#Quantum Suppremacy" class="nav-link">Quantum Suppremacy</a></li>
+        <li><a href="#Supplement" class="nav-link">Supplement</a></li>
       </ul>
       <div class="hamburger" id="hamburger">☰</div>
     </nav>
@@ -97,6 +98,14 @@
           </div>
         </div>
       </div>
+
+      <h3>Quantum CT image refinement</h3>
+      <div class="container">
+        <div class="side-image">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/downsampling.png" alt="Downsampling">
+          
+        </div>
+      </div>
       <div class="container">
         <div class="side-image">
           <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Downscaled_Image.png" alt="Downscaled Image">
@@ -108,6 +117,21 @@
         </div>
       </div>
     </section>
+    <section id="Supplement" data-bg="#231f20">
+      <h2>Supplement</h2>
+      <h3> Limitation of classical algorithm</h3>
+      <div class = "container">
+        <div class="side-image">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/Quantum_CT_Reconstruction.png" alt="Quantum CT Reconstruction">
+          <figcaption>Quantum CT Reconstruction</figcaption>
+        </div>
+        <div class="beer-slider" data-beer-label="QTR">
+          <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/QTR_Reconstruction.png">
+          <div class="beer-reveal" data-beer-label="FBP">
+            <img src="https://raw.githubusercontent.com/arim-ryou/arim-ryou.github.io/refs/heads/main/image/FBP_Reconstruction.png">
+          </div>
+        </div>
+    </section>
   </main>
 
   <script src="beerslider.js"></script>
@@ -118,12 +142,16 @@
 
       containers.forEach(container => {
         const items = container.querySelectorAll('.side-image, .beer-slider');
-        if (items.length === 2) {
+        if (items.length === 1) {
+          container.classList.add('one-column');
+        } else if (items.length === 2) {
           container.classList.add('two-columns');
         }
       });
     });
   </script>
+
+
 
 
 </body>

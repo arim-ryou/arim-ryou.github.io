@@ -163,6 +163,10 @@ p {
 .container.two-columns {
   grid-template-columns: repeat(2, 1fr);
 }
+.container.one-column {
+  grid-template-columns: 1fr; /* 하나만 표시할 땐 전체 너비 사용 */
+  justify-items: center;      /* (선택) 가운데 정렬 */
+}
 
 .side-image,
 .beer-slider {
