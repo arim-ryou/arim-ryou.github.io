@@ -147,10 +147,12 @@ p {
 }
 
 .container {
-  margin: 10px auto;
+  margin: 20px auto;
   display: grid;
   gap: 20px;
   padding: 30px;
+  align-items: center; /* 🔹 이미지 수직 중앙 정렬 */
+
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
