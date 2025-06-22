@@ -136,14 +136,14 @@ p  { font-size: 1rem; margin: 0; line-height: 1.6; }
   padding: 1rem;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 1 rgba(0, 0, 0, 0.4);
   background-color: #fff;
   grid-template-columns: repeat(4, 1fr);
 }
 .container-title {
   grid-column: 1 / -1; /* 전체 너비 사용 */
-  font-size: 1.4rem; /* 원하는 폰트 크기 설정 */
+  font-size: 1.2rem; /* 원하는 폰트 크기 설정 */
   color: var(--dark-bg); /* 또는 원하는 색상 */
   margin-bottom: 0.5rem;
   font-weight: 700;
