@@ -4,6 +4,7 @@
   --highlight: #00ADB5;        
   --content-width: 1100px;
   --section-bg: #393E46;      
+  font-size: 16px; /* 기본 크기 설정 */
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 body {
   margin: 0;
   font-family: 'Pretendard', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   background-color: var(--dark-bg);
   color: var(--text-light);
@@ -47,18 +48,19 @@ body.loaded {
 
 .navbar.transparent {
   background-color: rgba(16, 24, 32, 0.3);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0.5rem);
 }
+
 .logo {
-  display: flex;      /* 옆으로 정렬 */
-  align-items: center; /* 수직 중앙 정렬 (선택사항) */
-  gap: 10px;           /* 이미지 사이 간격 (선택사항) */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo img {
-  height: 40px;       
-  width: auto;       
-  display: block;    
+  height: 3.5rem;
+  width: auto;
+  display: block;
 }
 
 .nav-menu {
@@ -97,7 +99,7 @@ body.loaded {
 
   .nav-menu {
     position: absolute;
-    top: 60px;
+    top: 6rem;
     right: 0;
     flex-direction: column;
     background-color: var(--dark-bg);
@@ -122,75 +124,33 @@ section {
   border-radius: 0px;
 }
 
-h1 {
-  font-size: 2.4rem;
-  margin: 20px 0;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin: 10px 0;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin: 5px;
-  font-weight: 500;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0;
-  line-height: 1.6;
-}
+h1 { font-size: 2rem; margin: 2rem 0; font-weight: 700; }
+h2 { font-size: 1.5rem; margin: 1rem 0; font-weight: 600; }
+h3 { font-size: 1.2rem; margin: 0.5rem; font-weight: 500; }
+p  { font-size: 1rem; margin: 0; line-height: 1.6; }
 
 .container {
-  margin: 20px auto;
+  margin: 2rem auto;
   display: grid;
-  gap: 20px;
-  padding: 30px;
-  align-items: center; /* 🔹 이미지 수직 중앙 정렬 */
-
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
   box-sizing: border-box;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  background-color: rgb(255, 255, 255);
-  grid-template-columns: repeat(4, 1fr); /* 기본은 4개 */
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1 rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container.two-columns {
-  grid-template-columns: repeat(2, 1fr);
-}
-.container.one-column {
-  grid-template-columns: 1fr; /* 하나만 표시할 땐 전체 너비 사용 */
-  justify-items: center;      /* (선택) 가운데 정렬 */
-}
+.container.two-columns { grid-template-columns: repeat(2, 1fr); }
+.container.one-column { grid-template-columns: 1fr; justify-items: center; }
 
-.side-image,
-.beer-slider {
-  text-align: center;
-  flex: 1 1 48%;
-  max-width: 100%;
-}
+.side-image, .beer-slider { text-align: center; flex: 1 1 48%; max-width: 100%; }
 
-.side-image figcaption {
-  font-size: 1.2rem;
-  color: #000;
-  font-weight: 800;
-}
-.side-image img,
-.beer-slider img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+.side-image figcaption { font-size: 1.2rem; color: #000; font-weight: 800; }
+.side-image img, .beer-slider img { width: 100%; height: auto; border-radius: 8px; }
 
-.beer-slider {
-  max-width: none;
-}
-
+.beer-slider { max-width: none; }
 
 .beer-slider[data-beer-label]:after,
 .beer-reveal[data-beer-label]:after {
@@ -198,16 +158,20 @@ p {
   position: absolute;
   top: 1rem;
   line-height: 1;
-  padding: 0.5rem;
+  padding: 0.5em 1em;
   border-radius: 0.125rem;
   background: rgba(0, 0, 0, 0.75);
-}
-@media (min-width: 1024px) {
-  .side-image, .beer-slider {
-    flex: 1 1 48%;
-  }
-  .container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  font-size: 1rem;
 }
 
+@media (min-width: 1024px) {
+  :root { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+  :root { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  :root { font-size: 12px; }
+}
