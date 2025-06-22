@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   font-family: 'Pretendard', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -35,7 +35,7 @@ body.loaded {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 4rem;
   padding: 0 2rem;
   background-color: var(--dark-bg);
   display: flex;
@@ -99,7 +99,7 @@ body.loaded {
 
   .nav-menu {
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     right: 0;
     flex-direction: column;
     background-color: var(--dark-bg);
@@ -125,7 +125,7 @@ section {
 }
 
 h1 { font-size: 2.5rem; margin: 1rem 0; font-weight: 700; }
-h2 { font-size: 2rem; margin: 0.5rem 0; font-weight: 600; }
+h2 { font-size: 2rem; margin: 1.5rem 0; font-weight: 600; }
 h3 { font-size: 1.5rem; margin: 0.2rem; font-weight: 500; }
 p  { font-size: 1rem; margin: 0; line-height: 1.6; }
 
